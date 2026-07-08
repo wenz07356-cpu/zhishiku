@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from app.shared.config.common import env_bool, env_str
 
 
-@dataclass
+@dataclass(frozen=True)
 class EmbeddingConfig:
     bge_m3_path: str
     bge_m3: str

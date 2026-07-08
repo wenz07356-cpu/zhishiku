@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from app.shared.config.common import env_str
 
 
-@dataclass
+@dataclass(frozen=True)
 class MinerUConfig:
     base_url: str
     api_key: str

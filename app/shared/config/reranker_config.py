@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 from app.shared.config.common import env_bool, env_str
 
-@dataclass
+@dataclass(frozen=True)
 class RerankerConfig:
     bge_reranker_large: str
     bge_reranker_device: str

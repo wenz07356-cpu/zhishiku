@@ -2,7 +2,7 @@
 应用基础配置模块，负责读取导入服务与查询服务的启动配置。
 """
 import os
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from dotenv import load_dotenv
 
@@ -22,4 +22,4 @@ class AppSettings:
         item.strip() for item in os.getenv("CORS_ORIGINS", "*").split(",") if item.strip()
     )
 
-settings = AppSettings()
+settings = AppSettings
