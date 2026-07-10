@@ -39,7 +39,9 @@ pip-delete-this-directory.txt
 
 logs/
 
-doc/
+/doc/
+
+/output/
 
 notes/
 
