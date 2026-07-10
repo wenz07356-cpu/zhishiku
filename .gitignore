@@ -39,6 +39,10 @@ pip-delete-this-directory.txt
 
 logs/
 
+doc/
+
+notes/
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
